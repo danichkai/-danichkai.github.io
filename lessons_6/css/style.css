@@ -1,0 +1,704 @@
+/* Fonts family */
+@font-face {
+  font-family: 'ProximaNova_reg';
+  src: url('../fonts/ProximaNovaExCn-Regular.eot');
+  src: url('../fonts/ProximaNovaExCn-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNovaExCn-Regular.woff2') format('woff2'), url('../fonts/ProximaNovaExCn-Regular.woff') format('woff'), url('../fonts/ProximaNovaExCn-Regular.ttf') format('truetype'), url('../fonts/ProximaNovaExCn-Regular.svg#ProximaNovaExCn-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ProximaNova_bold';
+  src: url('../fonts/ProximaNovaCond-Bold.eot');
+  src: url('../fonts/ProximaNovaCond-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/ProximaNovaCond-Bold.woff2') format('woff2'), url('../fonts/ProximaNovaCond-Bold.woff') format('woff'), url('../fonts/ProximaNovaCond-Bold.ttf') format('truetype'), url('../fonts/ProximaNovaCond-Bold.svg#ProximaNovaCond-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+/* Colors */
+/* Basic setting (базовые настройки) */
+html {
+  font-size: 10px;
+}
+button:focus,
+input:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+/* Typography */
+section {
+  padding: 10rem 0;
+}
+.section-header {
+  margin: 6rem 0;
+  text-align: center;
+}
+h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 5rem;
+}
+p,
+h2,
+h3,
+h4,
+label,
+-subtitle {
+  color: #712727;
+}
+.button {
+  margin: 2rem;
+  padding: 1rem;
+  border-radius: 2px;
+  font-size: 1.2rem;
+  background-color: #ca3c18;
+  color: #ffffff;
+  font-family: 'ProximaNova_bold', sans-serif;
+  text-transform: uppercase;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.button:hover {
+  cursor: pointer;
+  background-color: #b33515;
+}
+/* Кнопка вверх */
+#toTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 5rem;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  border: 0.2rem solid #ccc;
+  background: #333;
+  z-index: 100;
+  outline: 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+#toTop:after {
+  content: '';
+  width: 1rem;
+  height: 1rem;
+  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* main */
+/* главный заголовок. */
+.main .header {
+  margin: 2rem;
+  background: #ffffff;
+  background-size: cover;
+}
+.main-content {
+  background: url(../img/ai/ai.bg.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 0 300px rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 0 0 0 300px rgba(0, 0, 0, 0.5) inset;
+}
+.main-content h1 {
+  padding: 2rem;
+  margin-top: 6rem;
+  font-size: 5rem;
+  color: #ffffff;
+  line-height: 1.15;
+  text-transform: uppercase;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.main-trigger {
+  padding: 5rem;
+  display: inline-block;
+  margin-top: 0;
+  margin-bottom: 8rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  color: #fcb203;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.main .phone-block {
+  text-align: right;
+}
+.main .phone-link {
+  display: inline-block;
+  font-size: 3rem;
+  line-height: 7rem;
+  text-align: right;
+  color: #712727;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.main-form {
+  margin-top: 10rem;
+  padding: 2rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+.main-form-header {
+  margin: 1rem 0 2rem;
+  font-size: 1.8rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.main-form-header strong {
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.main-form .header {
+  height: 7rem;
+}
+.main-form .wrap {
+  display: table;
+  width: 100%;
+  height: 7rem;
+}
+.main-form .wrap-block {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: right;
+}
+.form {
+  background-color: #ffffff;
+}
+.form-input,
+.form-textarea {
+  display: block;
+  margin: 2rem 0;
+  bottom: 1rem;
+  width: 100%;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 1.5rem;
+}
+.form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  background-color: #ffffff;
+}
+.form-btn {
+  display: block;
+  width: 100%;
+  height: 3.5rem;
+  font-size: 1.6rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  margin: 0 auto;
+}
+/* Оформление секции мы гордимся */
+.pride {
+  padding: 5rem;
+  margin-bottom: 3rem;
+}
+.pride-block {
+  text-align: center;
+  height: 25rem;
+}
+.pride-block h3 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.pride-block p {
+  display: inline-block;
+  width: 80%;
+  font-size: 1.4rem;
+}
+.pride-img {
+  height: 30rem;
+  margin-bottom: 3rem;
+}
+.pride-img img {
+  display: block;
+  margin: 0 auto;
+}
+/* Оформление секции Features чему мы обучаем*/
+.features {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+.features h3 {
+  top: 1rem;
+  text-align: center;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.features img {
+  display: inline-block;
+  padding: 0 2rem 0;
+  margin-top: 1rem;
+  text-align: center;
+  height: 30rem;
+  width: 50rem;
+}
+.features-img {
+  padding: 3rem;
+  margin-top: 0;
+}
+.features p {
+  padding: 2rem;
+  margin: 3rem;
+  top: 3rem;
+}
+.features .slick-active {
+  outline: none;
+}
+.features .arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  position: absolute;
+  z-index: 99;
+  width: 3rem;
+  height: 3rem;
+  border: none;
+}
+.features .prev {
+  left: 0;
+  background: url(../img/menu/left-chevron.svg) center no-repeat;
+  background-size: 70%;
+}
+.features .next {
+  right: 0;
+  background: url(../img/menu/right-arrow.svg) center no-repeat;
+  background-size: 70%;
+}
+/* Секция галерея */
+.galerea {
+  position: relative;
+  padding: 1rem 0;
+  background-color: #fcb203;
+}
+.galerea-prev-btn {
+  left: -4rem;
+}
+.galerea-next-btn {
+  right: -4rem;
+}
+.galerea .slick-active {
+  outline: none;
+}
+.galerea-slider {
+  padding: 0 4rem 0;
+  background-color: #fcb203;
+  -webkit-box-shadow: 6px 18px 10px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: 6px 18px 10px 0 rgba(0, 0, 0, 0.4);
+}
+.galerea-slider-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4rem;
+  height: 5rem;
+  background-color: #fcb203;
+  border: none;
+}
+.galerea-slider-btn img {
+  width: 100%;
+}
+.galerea-slider_item img {
+  height: 30rem;
+  width: 30rem;
+}
+.master {
+  background: #f5f5f5 no-repeat center;
+  background-size: cover;
+  padding: 3rem;
+}
+.master .teach {
+  border: 2px solid #DBDEE1;
+  margin-bottom: 3rem;
+}
+.master .teach img {
+  display: block;
+  padding: 2rem;
+  margin: 0 auto;
+  width: 30rem;
+  height: 30rem;
+}
+.master .teach h3 {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.master .teach p {
+  display: inline-block;
+  padding: 1.5rem;
+  display: block;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.master .teach a img {
+  display: block;
+  height: 8rem;
+  width: 8rem;
+}
+.camp {
+  position: relative;
+  background: url(../img/camp/moutain-1.jpg) center center no-repeat;
+  background-size: cover;
+  -webkit-box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.5) inset;
+          box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.5) inset;
+  padding: 3rem;
+}
+.camp .section-header {
+  margin: 3rem;
+}
+.camp h2,
+.camp p {
+  color: #fcb203;
+}
+.camp h3 {
+  font-size: 2.5rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+  color: #fcb203;
+}
+.camp img {
+  display: block;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+}
+.camp .camp-btn {
+  width: 20rem;
+  height: 5rem;
+  right: 5rem;
+  font-size: 1.6rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+/* Секция с отзывами */
+.feedback {
+  background: #f5f5f5;
+  background-size: cover;
+}
+.feedback h3,
+.feedback h4 {
+  text-align: center;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.feedback p {
+  padding: 2rem 6rem;
+}
+.feedback-prev-btn {
+  left: -4rem;
+}
+.feedback-next-btn {
+  right: -4rem;
+}
+.feedback-slider {
+  padding: 5rem 6rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: 6px 10px 18px 0px rgba(0, 0, 0, 0.11);
+}
+.feedback-slider-btn {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 4rem;
+  height: 5rem;
+  border: none;
+  background-color: #ffffff;
+}
+.feedback-slider-btn img {
+  width: 50%;
+}
+.feedback-slider .mother {
+  display: block;
+}
+.feedback-slider .mother img {
+  display: block;
+  margin: 0 auto;
+  width: 15rem;
+  height: 15rem;
+}
+/* Оформление секции социальные сети */
+.social {
+  position: relative;
+  background: #fcb203;
+  padding: 3rem;
+}
+.social-png {
+  padding: 2rem;
+}
+.social-png img {
+  width: 8rem;
+  height: 8rem;
+  padding: 2rem;
+}
+.social-text h3 {
+  padding: 2rem;
+  font-size: 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+/* Контакты */
+.contacts {
+  position: relative;
+  background: #f5f5f5 no-repeat center;
+  background-size: cover;
+}
+.contacts p {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.contacts-link {
+  display: inline-block;
+  color: #712727;
+  border-bottom: 1px dotted #712727;
+}
+.contacts-link:hover {
+  color: #4b1a1a;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contacts-form {
+  padding: 1.6rem;
+  background-color: #ffffff;
+}
+.contacts-form h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.contacts-form-btn {
+  padding-left: 3rem 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+footer {
+  padding: 4rem 0;
+  background: #cccccc;
+}
+footer .logo img {
+  padding: 0.5rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+}
+footer .footer-contacts {
+  text-align: center;
+  padding-top: 0.5rem;
+}
+footer .footer-contacts img {
+  padding: 2rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+footer .footer-contacts p {
+  margin: 0;
+}
+footer .footer-dev-logo {
+  text-align: right;
+}
+footer .footer-dev-logo img {
+  padding: 4rem;
+  display: block;
+  margin-left: 20rem;
+  margin-top: 3rem;
+}
+/*  Оформление модальных окон */
+.popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.popup-content {
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  background-color: #ffffff;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 1rem 3rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.popup-form {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+.popup-close {
+  position: absolute;
+  top: -1.5rem;
+  right: -2rem;
+  width: 2rem;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  font-size: 3rem;
+  color: #ffffff;
+}
+.popup-content {
+  text-align: center;
+}
+.popup-header {
+  font-size: 1.6rem;
+}
+@media (max-width: 1199px) {
+  .galerea .fotorama {
+    padding: 0.5rem;
+    margin-bottom: 3rem;
+  }
+}
+@media (max-width: 991px) {
+  .main {
+    background-position: top right;
+  }
+  .main-content {
+    -webkit-box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.5) inset;
+            box-shadow: 0 0 0 500px rgba(0, 0, 0, 0.5) inset;
+  }
+  .main h1 {
+    margin-left: 2rem;
+    font-size: 5rem;
+  }
+  .main-trigger {
+    display: block;
+    margin: 0 2rem 2rem;
+    font-size: 4rem;
+  }
+  .main-form {
+    text-align: center;
+    margin: 0 15rem 5rem;
+    padding: 5rem 3rem;
+  }
+  .features img {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 767px) {
+  .main {
+    background-position: top-left;
+    overflow: hidden;
+  }
+  .main .logo,
+  .main .wrap {
+    text-align: center;
+  }
+  .main .phone-block {
+    text-align: center;
+  }
+  .main-content h1 {
+    padding: 2rem;
+    margin-top: 3rem;
+    font-size: 4rem;
+  }
+  .main-trigger {
+    padding: 1rem;
+    margin-bottom: 2rem;
+    font-size: 3rem;
+  }
+  .main-form {
+    margin: 0 2rem 2rem;
+    padding: 2rem 3rem;
+  }
+  .pride-block {
+    text-align: center;
+    height: 20rem;
+  }
+  .pride-img {
+    margin-top: 8rem;
+  }
+  .camp {
+    padding: 1rem;
+  }
+  .camp .camp-btn {
+    margin: 0 auto;
+  }
+  /* Оформление секции Features */
+  .features {
+    padding: 0;
+  }
+  .features h2 {
+    margin-bottom: 1rem;
+  }
+  .features img {
+    margin: 0 auto;
+    height: 70%;
+    width: 70%;
+  }
+  .features p {
+    padding: 0;
+    margin-top: 0;
+  }
+  .features .prev {
+    left: -2rem;
+  }
+  .features .next {
+    right: -2rem;
+  }
+  .galerea-slider {
+    padding: 0 5rem 0;
+  }
+  .galerea-btn {
+    display: none;
+  }
+  .galerea-prev-btn {
+    left: -0.5rem;
+  }
+  .galerea-next-btn {
+    right: -0.5rem;
+  }
+  .feedback {
+    display: block;
+  }
+  .feedback-prev-btn {
+    left: -1rem;
+  }
+  .feedback-next-btn {
+    right: -1rem;
+  }
+  .feedback-slider {
+    padding: 6rem;
+  }
+  .feedback p {
+    display: inline-block;
+    top: 2rem;
+    padding: 0;
+    bottom: 0;
+  }
+  .master .teach img {
+    width: 20rem;
+    height: 20rem;
+  }
+  .social-png {
+    padding: 2rem;
+  }
+  .social-png img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+  }
+  .popup-form {
+    padding: 0;
+    margin: 0;
+  }
+  .popup-content {
+    padding: 2rem;
+  }
+  footer .logo {
+    margin-left: 5rem;
+    padding: 1rem;
+  }
+  footer .footer-dev-logo {
+    text-align: center;
+    margin-top: 2rem;
+  }
+}
